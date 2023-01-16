@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Матвей Артемьев](https://up.htmlacademy.ru/htmlcss/36/user/2318991).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k)
 
 ---
 
