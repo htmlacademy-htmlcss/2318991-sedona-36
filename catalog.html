@@ -24,18 +24,22 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="navigation-link link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+            <a class="navigation-link link-favorite" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="notification-badge">12</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button-navigation" href="#">Хочу сюда!</a>
+            <a class="button button-navigation" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -53,7 +57,7 @@
           <h2 class="visually-hidden">Выбор гостиницы</h2>
           <form class="catalog-filter-get" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -77,7 +81,7 @@
             </fieldset>
 
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья</legend>
+              <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -113,8 +117,8 @@
                   <input type="range" min="0" max="9000" value="5000" class="slider" id="myRange">
                 </div>
             </fieldset>
-            <button class="button-submit" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+            <button class="button button-submit" type="submit">Применить</button>
+            <button class="button button-reset" type="reset">Сбросить</button>
           </form>
           </section>
         </header>
@@ -131,13 +135,13 @@
           </section>
           <section class="button-card">
             <h2 class="visually-hidden">Показать как:</h2>
-            <button class="button-card-type" type="button">
+            <button class="button-viev card-type" type="button">
               <span class="visually-hidden">Показать карточки</span>
             </button>
-            <button class="button-screen-type" type="button">
+            <button class="button-viev screen-type" type="button">
               <span class="visually-hidden">На весь экран</span>
             </button>
-            <button class="button-list-type" type="button">
+            <button class="button-viev list-type" type="button">
               <span class="visually-hidden">Показать списком</span>
             </button>
           </section>
@@ -247,17 +251,17 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button footer-button" href="https://vk.com/htmlacademy">
+            <a class="link-footer link-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button footer-button" href="https://t.me/htmlacademy">
+            <a class="link-footer link-tg" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button footer-button" href="https://www.youtube.com/user/htmlacademy.ru">
+            <a class="link-footer link-yt" href="https://www.youtube.com/user/htmlacademy.ru">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
