@@ -32,6 +32,7 @@ body {
   overflow: hidden;
   }
   .button {
+  font-family: "PT Sans";
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -77,6 +78,7 @@ body {
     font-weight: 700;
     text-align: center;
     background-color: #ffffff;
+    text-decoration: none;
 
   }
   .main-index {
@@ -218,6 +220,7 @@ body {
     background-color: #ffffff;
   }
   .footer-contacts-address-phone {
+    font-style: normal;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
