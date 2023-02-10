@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+  .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+  .button {
+  font-family: "PT Sans";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  }
+  .button-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #756157;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  .button-search {
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #756157;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .button-sub {
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #82B3D3;
+    border-radius: 0px 4px 4px 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .main-page-header {
+    background-color: #ffffff;
+  }
+  .navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ffffff;
+    text-decoration: none;
+
+  }
+  .main-index {
+    color:#333333;
+    background-color: #ffffff;
+  }
+  .hero {
+  background-image: url("../images/index-background.jpg"), url("../images/divider.svg");
+  background-color: rgba(30, 69, 95, 0.2);
+  background-size: 100% auto;
+  color:black;
+  background-repeat: no-repeat;
+  }
+  .advantages-desc {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#000000;
+  }
+  .advantages-desc-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .advantages-list {
+    text-align: center;
+  }
+  .image-right{
+    background-color: #82B3D3;
+    }
+  .image-left {
+    background-color: #82B3D3;
+  }
+  .advantages-title-white-heading {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+  .advantages-title-black-heading{
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+  .advantages-title-white-text {
+    color: #ffffff;
+    text-align: center;
+  }
+  .blue-fill {
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+  .dark-fill {
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+  .benefits-desc {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#000000;
+  }
+  .benefits-desc-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .benefits-item{
+    text-align: center;
+    padding: 80px 85px;
+    background-color: rgba(131, 179, 211, 0.12);
+    align-items: center;
+    text-align: center;
+  }
+  .home {
+    background-image: url("../images/benefits-home.svg");
+    background-repeat: no-repeat;
+    background-position: top, center;
+  }
+  .souvenirs {
+    background-image: url("../images/benefits-souvenirs.svg");
+    background-repeat: no-repeat;
+    background-position: top, center;
+  }
+  .no-fill {
+    background-color: #ffffff;
+    background-image: url("../images/benefits-meal.svg");
+    background-repeat: no-repeat;
+    background-position: top, center;
+  }
+  .search {
+    text-align: center;
+  }
+  .search-desc {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .search-desc-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .appointment {
+    color: #ffffff;
+    background-color: rgba(30, 70, 97, 0.2);
+    background-image: url("../images/subscribe.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .appointment-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  .appointment-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .appointment-email{
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
+  width: 452px;
+  height: 52px;
+  }
+  .page-footer {
+    background-color: #ffffff;
+  }
+  .footer-contacts-address-phone {
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color:#FFFFFF
+  }
+  .inner-header {
+    background-image: url("../images/background-filter.jpg");
+    background-color: grey ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #FFFFFF;
+  }
+  .breadcrumbs-link {
+    color: inherit;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .control {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .catalog-filter-label {
+  background-color: #F2F2F2;
+  color:#000000;
+  }
+  .range-input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .button-submit {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #82B3D3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .button-reset {
+    font-size: 16px;
+    line-height: 20px;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+  }
+  .catalog-result {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .select-contol {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+  }
+  .button-viev {
+    color: #333333;
+    background-color: transparent;
+  }
+  .catalog-products {
+    text-align: center;
+  }
+  .catalog-product-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color:#000000
+  }
+  .product-card-price {
+    text-align: right;
+  }
+  .button-about {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #756157;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .button-favorites {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #82B3D3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .button-favorites-done {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #7DB54F;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .product-card-rate-text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #82b3d3;
+    border-radius: 4px;
+  }
+  .pagination-link-current {
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+  .pagination-text {
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  .appointment-inner {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .appointment-inner-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  .appointment-inner-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .appointment-email{
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
+  width: 452px;
+  height: 52px;
+  }
