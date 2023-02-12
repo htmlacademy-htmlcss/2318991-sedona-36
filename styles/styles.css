@@ -84,25 +84,24 @@ body {
     padding-right: 50px;
     width: 232px;
   }
-  .main-page-header {
-    background-color: #ffffff;
+  .padding-container {
+    max-width: 1060px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
   .navigation {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
   }
   .navigation-list {
     display: flex;
     flex-direction: row;
     width: 507px;
-    margin-left: 70px;
-    margin-right: 285px;
+    padding: 0;
+    justify-content: space-between;
   }
   .navigation-user {
     max-width: 268px;
-    margin-right: 70px;
-
   }
   .navigation-link {
     font-size: 20px;
@@ -115,10 +114,6 @@ body {
 
   }
 
-  .main-index {
-    color:#333333;
-    background-color: #ffffff;
-  }
   .main-container {
     flex-grow: 1;
   }
@@ -220,7 +215,6 @@ body {
   .benefits-item{
     padding: 80px 85px;
     background-color: rgba(131, 179, 211, 0.12);
-
   }
   .home {
     background-image: url("../images/benefits-home.svg");
@@ -265,7 +259,7 @@ body {
   }
   .appointment {
     color: #ffffff;
-    background-color: rgba(30, 70, 97, 0.2);
+    background-color: #000000;
     background-image: url("../images/subscribe.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -296,17 +290,9 @@ body {
     border: 0;
     padding: 0
   }
-
-  .page-footer {
-    background-color: #ffffff;
-  }
   .page-footer-container {
     display: flex;
-    max-width: 1060px;
-    padding-left: 70px;
-    padding-right: 70px;
     justify-content: space-between;
-
   }
   .footer-social-list {
     display: flex;
@@ -327,7 +313,6 @@ body {
   }
   .footer-link{
     width: 115px;
-
   }
   .inner-header-title {
     font-weight: 700;
@@ -344,16 +329,12 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .breadcrumbs-title-container {
-    width: 1060px;
-    margin: 0 70px;
+  .breadcrumbs {
+    padding: 0;
   }
   .catalog-filter-get {
     display: flex;
     flex-direction: row;
-    margin-left: 70px;
-    margin-right: 70px;
-    width: 1060px;
     justify-content: space-between;
   }
   .catalog-filter-group {
@@ -428,9 +409,6 @@ body {
   .catalog-result {
     display: flex;
     flex-direction: row;
-    width: 1060px;
-    margin: 0 70px;
-    background-color: #ffffff;
   }
   .catalog-result-subtitle {
     font-weight: 700;
@@ -470,7 +448,6 @@ body {
     flex-wrap: wrap;
     width: 1060px;
     margin: 0 70px;
-    background-color: #ffffff;
     justify-content: space-between;
   }
   .catalog-product-card {
@@ -519,15 +496,10 @@ body {
     text-align: center;
     text-transform: uppercase;
   }
-  .pagination {
-    background-color: #FFFFFF;
-    width: 1200px;
-  }
   .pagination-list {
     display: flex;
     flex-direction: row;
-    margin: 0 70px;
-    padding: 0;
+
   }
   .pagination-link {
     font-weight: 700;
