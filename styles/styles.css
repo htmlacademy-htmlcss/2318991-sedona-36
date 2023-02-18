@@ -363,7 +363,7 @@ body {
     line-height: 24px;
     color: rgba(0, 0, 0, 0.6);
     background-color: #f2f2f2;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
     width: 452px;
     height: 52px;
     border: 0;
@@ -446,7 +446,7 @@ body {
     width: 288px;
     margin: 0;
     padding: 0;
-    border: 0px;
+    border: 0;
   }
   .catalog-filter-list {
     list-style-type: none;
@@ -628,6 +628,7 @@ body {
     list-style-type: none;
     margin-top: 80px;
     margin-bottom: 60px;
+
   }
   .pagination-link {
     font-weight: 700;
@@ -640,10 +641,9 @@ body {
     background-color: #82b3d3;
     border-radius: 4px;
     display: block;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     box-sizing: border-box;
-    padding: 11px 24px;
   }
   .pagination-item:not(:last-child){
     margin-right: 8px;
