@@ -566,6 +566,7 @@ body {
   .catalog-product-card {
     display: grid;
     grid-template-columns: 140px 140px;
+    grid-template-rows: 1fr repeat(3, auto);
     border: 1px solid #E6E6E6;
     padding: 20px;
     gap: 16px 20px;
