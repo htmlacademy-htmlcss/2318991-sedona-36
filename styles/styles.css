@@ -54,34 +54,27 @@ body {
   text-decoration: none;
   border-radius: 4px;
   color: #FFFFFF;
+  border: none;
+  height: max-content;
   }
   .button-navigation {
     font-size: 16px;
     line-height: 20px;
     background-color: #756157;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding: 8px 34px;
   }
   .button-search {
     font-size: 20px;
     line-height: 36px;
     background-color: #756157;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 8px 50px;
   }
   .button-sub {
     font-size: 20px;
     line-height: 36px;
     background-color: #82B3D3;
     border-radius: 0px 4px 4px 0px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 8px 50px;
     width: 232px;
     border: 0;
   }
@@ -509,10 +502,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     background-color: #82B3D3;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 8px 50px;
     margin-bottom: 32px;
     border: none;
   }
@@ -567,26 +557,46 @@ body {
     background-color: #ffffff;
   }
   .catalog-product-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 1060px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    gap: 20px;
     list-style-type: none;
     margin: 0;
   }
   .catalog-product-card {
-    width: 340px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    border: 1px solid #E6E6E6;
+    padding: 20px;
+    gap: 16px 20px;
+  }
+  .catalog-product-card-link {
+    grid-column: 1/-1;
   }
   .catalog-product-card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color:#000000
+    color:#000000;
+    margin: 0;
+    margin-top: 16px;
+    max-width: 300px;
   }
   .product-card-price {
-    text-align: right;
+    justify-self: end;
+  }
+  .product-card-rate-text {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: block;
+    min-width: 140px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding: 9px 22px 8px 23px;
+    grid-column: 2/3;
+    height: max-content;
   }
   .button-about {
     font-size: 16px;
@@ -605,12 +615,6 @@ body {
     line-height: 20px;
     background-color: #7DB54F;
     padding: 8px 18px;
-  }
-  .product-card-rate-text {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
   }
   .pagination-list {
     display: flex;
