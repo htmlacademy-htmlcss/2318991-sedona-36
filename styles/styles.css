@@ -68,6 +68,7 @@ body {
     line-height: 36px;
     background-color: #756157;
     padding: 8px 50px;
+    margin-bottom: 96px;
   }
   .button-sub {
     font-size: 20px;
@@ -116,23 +117,23 @@ body {
 }
   .main-container {
     flex-grow: 1;
-    padding-top: 51px;
   }
-  .main-index {
+  .hero {
   background-image: url("../images/index-background.jpg");
-  background-color: #FFFFFF;
+  background-color: rgba(131, 179, 211, 0.2);
   background-size: 100% auto;
-  color:black;
   background-repeat: no-repeat;
+  min-height: 485px;
   }
   .hero-logo{
   display: block;
   margin: 0 auto;
   margin-bottom: 82px;
+  padding-top: 51px
   }
   .advantages-desc {
-    margin: 0;
-    padding: 0;
+    display: block;
+    padding: 69px 0 25px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -141,18 +142,14 @@ body {
     text-align: center;
     margin: 0 auto;
     display: block;
-    margin-top: 151px;
-    margin-bottom: 25px;
     width: 620px;
   }
   .advantages-desc-text {
-    margin: 0;
-    padding: 0;
+    padding: 0 0 90px;
     font-size: 22px;
     line-height: 26px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 90px;
     width: 651px;
     }
   .advantages-list {
@@ -166,6 +163,7 @@ body {
   }
   .advantages-logo {
     display: block;
+
   }
   .image-right{
     background-color: #82B3D3;
@@ -189,31 +187,29 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    margin: 0;
     width: 230px;
     margin: 0 auto;
-    margin-top: 102px;
-    margin-bottom: 62px;
+    padding: 102px 0 62px;
   }
   .white-heading {
     color: #ffffff;
+    max-width: 175px;
   }
   .black-heading{
     color: #000000;
+    max-width: 175px;
   }
   .advantages-title-white-text {
     color: #ffffff;
-    margin: 0;
     margin: 0 auto;
     width: 230px;
-    margin-bottom: 102px;
+    padding-bottom: 102px;
     text-align: center;
   }
   .advantages-title-black-text {
-    margin: 0;
     margin: 0 auto;
     width: 230px;
-    margin-bottom: 112px;
+    padding-bottom: 112px;
     text-align: center;
   }
   .blue-fill {
@@ -225,7 +221,6 @@ body {
     width: 400px;
   }
   .benefits-desc {
-    margin: 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -234,18 +229,16 @@ body {
     color:#000000;
     margin: 0 auto;
     display: block;
-    margin-top: 64px;
-    margin-bottom: 20px;
+    padding: 64px 0 20px;
     width: 505px;
   }
   .benefits-desc-text {
-    margin: 0;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     display: block;
     margin: 0 auto;
-    margin-bottom: 64px;
+    padding-bottom: 64px;
     width: 490px;
   }
   .benefits-list {
@@ -258,14 +251,13 @@ body {
     list-style-type: none;
   }
   .benefits-heading {
-    margin-top: 183px;
-    margin-bottom: 30px;
+    padding-top: 183px;
+    padding-bottom: 30px;
   }
   .advantages-title-benefits-text {
-    margin: 0;
     margin: 0 auto;
     width: 230px;
-    margin-bottom: 81px;
+    padding-bottom: 81px;
     text-align: center;
   }
   .benefits-item{
@@ -293,8 +285,7 @@ body {
     flex-direction: column;
     width: 592px;
     align-items: center;
-    margin: 0 304px;
-    margin-bottom: 96px;
+    margin: 0 auto;
   }
   .search-desc {
     font-weight: 700;
@@ -304,15 +295,14 @@ body {
     color: #000000;
     width: 297px;
     margin: 0 auto;
-    margin-top: 90px;
-    margin-bottom: 20px;
+    padding: 96px 0 20px;
   }
   .search-desc-text {
     font-size: 22px;
     line-height: 26px;
     width: 592px;
-    margin: 0;
-    margin-bottom: 54px;
+    margin: 0 auto;
+    padding-bottom: 54px;
     text-align: center;
   }
   .appointment {
@@ -322,6 +312,7 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
+    padding-top: 96px;
     padding-bottom: 104px;
   }
 
@@ -330,7 +321,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 258px;
+    margin: 0 auto;
   }
 
   .appointment-title {
@@ -339,16 +330,15 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     width: 404px;
-    margin: 0;
-    margin-top: 96px;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
   .appointment-text {
     font-size: 22px;
     line-height: 26px;
     width: 475px;
-    margin: 0;
-    margin-bottom: 54px;
+    margin: 0 auto;
+    padding-bottom: 54px;
   }
   .appointment-email{
     font-family: inherit;
