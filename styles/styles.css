@@ -84,7 +84,7 @@ body {
     font-size: 20px;
     line-height: 36px;
     background-color: #82B3D3;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
     padding: 8px 50px;
     width: 232px;
     border: 0;
@@ -235,7 +235,6 @@ body {
     color:#000000;
     text-align: center;
     margin: 0 auto;
-    display: block;
     width: 620px;
   }
 
