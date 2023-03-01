@@ -41,28 +41,29 @@ body {
   }
 
   .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
   .button {
-  font-family: "PT Sans";
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 4px;
-  color: #FFFFFF;
-  border: none;
-  height: max-content;
+    font-family: "PT Sans";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: none;
+    height: max-content;
+    cursor: pointer;
   }
 
   .button-navigation {
@@ -88,6 +89,31 @@ body {
     padding: 8px 50px;
     width: 232px;
     border: 0;
+  }
+
+  .button-link:hover, .button-link:focus {
+    background-color: #615048;
+  }
+
+  .button-link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .button-link:disabled {
+    background-color: #E5E5E5;
+    cursor: default;
+  }
+
+  .blue-button:hover, .blue-button:focus {
+    background-color: #68A2CA;
+  }
+
+  .blue-button:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .blue-button:disabled {
+    background-color: #E5E5E5;
+    cursor: default;
   }
 
   .padding-container {
@@ -132,6 +158,19 @@ body {
     background-color: #ffffff;
     text-decoration: none;
     padding: 20px 16px;
+    user-select: none;
+  }
+
+  .navigation-link:hover, .navigation-link:focus {
+    background-color: #F2F2F2;
+    color: #68A2CA;
+    transition: color 1s;
+    box-shadow: inset 0 0 0 4px #e7e7e7;
+    outline: none;
+  }
+  .navigation-link:active {
+    background-color: #82B3D3;
+    color:#000000;
   }
 
   .navigation-user .navigation-item:nth-child(2) {
@@ -139,18 +178,18 @@ body {
   }
 
   .navigation-user .navigation-link {
-  min-width: 20px;
-  min-height: 20px;
+    min-width: 20px;
+    min-height: 20px;
   }
 
   .navigation-icon {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
   }
 
   .link-search {
@@ -182,6 +221,7 @@ body {
 
   .navigation-link-current {
     position: relative;
+    cursor:default;
   }
 
   .navigation-link-current::after {
@@ -259,7 +299,7 @@ body {
   }
 
   .advantages-logo {
-    display: block;
+    object-fit: cover;
   }
 
   .image-right{
@@ -545,6 +585,13 @@ body {
     left: 0;
     margin: auto;
   }
+  .link-footer:hover path, .link-footer:focus path {
+    fill: #68A2CA
+  }
+
+  .link-footer:active path {
+    opacity: 0.3;
+  }
 
   .footer-contacts{
     min-width: 720px;
@@ -563,10 +610,27 @@ body {
     padding: 5px 0 5px;
   }
 
+  .footer-contacts-address-phone:hover,
+  .footer-contacts-address-phone:focus{
+    color: #756157;
+  }
+
+  .footer-contacts-address-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+  }
+
   .htmlacademy-link {
     min-width: 115px;
     max-height: 50px;
     text-decoration: none;
+  }
+
+  .htmlacademy-link:hover path, .htmlacademy-link:focus path {
+    fill: #756157
+  }
+
+  .htmlacademy-link:active path {
+    fill: rgba(117, 97, 87, 0.3);
   }
 
   .footer-logo {
@@ -636,6 +700,14 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     user-select: none;
+  }
+
+  .breadcrumbs-link-home:hover, .breadcrumbs-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .breadcrumbs-link-home:active, .breadcrumbs-link:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .breadcrumbs-link::before {
@@ -756,7 +828,24 @@ body {
     border-radius: 0;
     padding: 8px 57px;
     margin: 0 auto;
-    background-color: none;
+    background-color: transparent;
+  }
+
+  .button-reset:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .button-reset:focus {
+    box-sizing: border-box;
+    border: 3px solid #83B3D3;
+  }
+
+  .button-reset:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .button-reset:disabled {
+    color: rgba(255, 255, 255, 0.1);
   }
 
   .catalog-result {
@@ -799,6 +888,19 @@ body {
     appearance: none;
   }
 
+  .select-contol:hover, .select-contol:focus {
+    border: 2px solid #68A2CA;
+  }
+
+  .select-contol:active {
+    border: 2px solid #3F5E72;
+  }
+
+  .select-contol:disabled {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   .sorting-card-list {
     width: 160px;
     display: flex;
@@ -830,6 +932,19 @@ body {
     background-color: #FFFFFF;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .button-viev:hover {
+    border-color: #000000;
+  }
+
+  .button-viev:focus {
+    border-color: #68A2CA;
+    outline: 0;
+  }
+
+  .button-viev:active{
+    border-color: #000000;
   }
 
   .card-type {
@@ -878,6 +993,7 @@ body {
 
   .catalog-product-card-link {
     grid-column: 1/-1;
+    text-decoration: none;
   }
 
   .catalog-product-card-title {
@@ -941,6 +1057,19 @@ body {
     padding: 8px 18px;
   }
 
+  .button-favorites-done:hover, .button-favorites-done:focus {
+    background-color: #6C9E42;
+  }
+
+  .button-favorites-done:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .button-favorites-done:disabled {
+    background-color: #E5E5E5;
+    cursor: default;
+  }
+
   .pagination {
     position: relative;
   }
@@ -1000,6 +1129,20 @@ body {
     background-color: #FFFFFF;
     padding: 8px 10px;
     box-sizing: border-box;
+  }
+
+  .pagination-link:hover, .pagination-link:focus {
+    background-color: #68A2CA;
+    border: 1px solid #82B3D3;
+  }
+
+  .pagination-link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .pagination-link-current:hover, .pagination-link-current:focus, .pagination-link-current:active {
+    color: #000000;
+    background-color: #F2F2F2;
   }
 
   .appointment-inner {
