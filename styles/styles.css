@@ -300,6 +300,7 @@ body {
 
   .advantages-logo {
     object-fit: cover;
+    display: block;
   }
 
   .image-right{
@@ -1006,6 +1007,9 @@ body {
     max-width: 300px;
   }
 
+  .catalog-product-card-image {
+    display: block;
+  }
   .catalog-product-card-image:hover {
     opacity: 0.8;
     outline: 2px solid #82B3D3;
