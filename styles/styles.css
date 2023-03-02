@@ -1006,6 +1006,26 @@ body {
     max-width: 300px;
   }
 
+  .catalog-product-card-image:hover {
+    opacity: 0.8;
+    outline: 2px solid #82B3D3;
+  }
+
+  .catalog-product-card-image:active {
+    opacity: 0.3;
+  }
+
+  .catalog-product-card-title:hover {
+    opacity: 0.8;
+    outline: 2px solid #82B3D3;
+    color: #756157;
+  }
+
+  .catalog-product-card-title:active {
+    opacity: 0.4;
+    color: rgba(117, 97, 87, 0.3);
+  }
+
   .product-card-price {
     justify-self: end;
   }
