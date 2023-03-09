@@ -316,7 +316,7 @@ body {
 
   .advantages-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -326,7 +326,8 @@ body {
 
   .advantages-logo {
     object-fit: cover;
-    display: block;
+    display: flex;
+    flex-grow: 1;
     width: 800px;
     height: 100%;
   }
@@ -335,6 +336,7 @@ body {
     background-color: #82B3D3;
     width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     }
 
   .advantages-index-columns{
@@ -362,6 +364,7 @@ body {
     width: 1200px;
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 
   .advantages-title {
@@ -388,7 +391,17 @@ body {
     width: 60px;
     bottom: -30px;
     height: 2px;
-    right: 55px;
+    right: 85px;
+  }
+
+  .second::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60px;
+    bottom: -30px;
+    height: 2px;
+    right: 58px;
   }
 
   .black-heading{
@@ -604,6 +617,7 @@ body {
     border: 0;
     padding: 0;
     padding-left: 20px;
+    box-sizing: border-box;
   }
 
   .appointment-email:hover {
@@ -628,8 +642,10 @@ body {
   .page-footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 40px;
     padding-bottom: 30px;
+    max-width: 1200px;
   }
 
   .footer-social {
@@ -1140,7 +1156,7 @@ body {
   }
 
   .sorting-card-list {
-    width: 230px;
+    width: 160px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -1158,7 +1174,7 @@ body {
     align-items: center;
   }
 
-  .sorting-card-item:not(:last-child){
+  .sorting-card-item:not(:nth-child(3n)){
     margin-right: 8px;
   }
 
@@ -1355,6 +1371,7 @@ body {
 
   .pagination-list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
   }
@@ -1452,6 +1469,7 @@ body {
   .appointment-form {
     width: 684px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
   }
 
