@@ -215,6 +215,26 @@ body {
     margin: auto;
   }
 
+  .link-search:hover path,
+  .link-search:focus path {
+    fill: #68A2CA;
+    transition: fill 1s;
+  }
+
+  .link-search:active path {
+    opacity: 0.4;
+  }
+
+  .link-favorite:hover path,
+  .link-favorite:focus path {
+    fill: #68A2CA;
+    transition: fill 1s;
+  }
+
+  .link-favorite:active path {
+    opacity: 0.4;
+  }
+
   .link-search {
     padding: 22px 12px;
   }
