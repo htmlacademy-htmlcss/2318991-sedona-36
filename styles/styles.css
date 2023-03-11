@@ -56,7 +56,7 @@ body {
   }
 
   .button {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -213,6 +213,26 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
+  }
+
+  .link-search:hover path,
+  .link-search:focus path {
+    fill: #68A2CA;
+    transition: fill 1s;
+  }
+
+  .link-search:active path {
+    opacity: 0.4;
+  }
+
+  .link-favorite:hover path,
+  .link-favorite:focus path {
+    fill: #68A2CA;
+    transition: fill 1s;
+  }
+
+  .link-favorite:active path {
+    opacity: 0.4;
   }
 
   .link-search {
@@ -485,7 +505,7 @@ body {
 
   .benefits-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -667,6 +687,7 @@ body {
     margin: 0;
     list-style-type: none;
     align-content:center;
+    width: 142px;
   }
 
   .footer-social-item {
@@ -702,11 +723,6 @@ body {
     opacity: 0.3;
   }
 
-  .footer-contacts{
-    min-width: 720px;
-    text-align: center;
-  }
-
   .footer-contacts-address-phone {
     display: inline-block;
     font-style: normal;
@@ -715,8 +731,9 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
-    min-width: 331px;
+    max-width: 720px;
     padding: 5px 0 5px;
+    text-align: center;
   }
 
   .footer-contacts-address-phone:hover,
@@ -789,25 +806,29 @@ body {
   }
 
   .breadcrumbs-link-home {
-    display: block;
+    display: flex;
     position: absolute;
-    top: 3px;
+    top: -1px;
     right: 0;
     bottom: 5px;
     left: 0;
     background-image: url("../images/home.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 13px 15px;
     color: #FFFFFF;
     text-decoration: none;
+    padding: 4px 0 5px;
+    width: 12px;
+    height: 12px;
   }
 
   .breadcrumbs-link {
+    color: inherit;
+    font-size: 16px;
+    line-height: 21px;
     display: block;
     position: relative;
     padding-left: 21px;
-    color: #FFFFFF;
     text-decoration: none;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -894,12 +915,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .breadcrumbs-link {
-    color: inherit;
-    font-size: 16px;
-    line-height: 21px;
   }
 
   .catalog-filter-title {
@@ -994,6 +1009,7 @@ body {
     text-align: left;
     background-color: #F2F2F2;
     border: none;
+    appearance: textfield;
   }
 
   .range-input::-webkit-outer-spin-button,
@@ -1018,6 +1034,14 @@ body {
 
   .range-input:focus {
     outline: 3px solid #83B3D3;
+  }
+
+  .range-input::placeholder {
+    color: #000000;
+  }
+
+  .range-input:focus-visible:not(:placeholder-shown) {
+    outline: 2px solid #000000;
   }
 
   .range-scale {
@@ -1093,7 +1117,7 @@ body {
 
   .button-reset:focus {
     box-sizing: border-box;
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
   }
 
   .button-reset:active {
@@ -1155,6 +1179,7 @@ body {
        -moz-appearance: none;
             appearance: none;
     outline: none;
+    cursor: pointer;
   }
 
   .select-contol:hover,
@@ -1254,7 +1279,7 @@ body {
     gap: 20px;
     list-style-type: none;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 
   .catalog-product-card {
@@ -1443,7 +1468,7 @@ body {
   .pagination-link:hover,
   .pagination-link:focus {
     background-color: #68A2CA;
-    border: 1px solid #82B3D3;
+    outline: 1px solid #82B3D3;
   }
 
   .pagination-link:active {
@@ -1501,10 +1526,12 @@ body {
     left: 0;
     display: flex;
     background-color: rgba(242, 242, 242, 0.8);
+    z-index: 3;
   }
 
   .modal-container-close {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .modal {
@@ -1580,7 +1607,7 @@ body {
     display: grid;
     grid-template-columns: 137px 440px;
     position: relative;
-    margin: 0 0 22px;
+    margin: 0 0 23px;
     padding: 0;
   }
 
@@ -1604,7 +1631,7 @@ body {
     width: 440px;
     height: 48px;
     grid-column: 2 / 4;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -1909,7 +1936,6 @@ body {
   .modal-form-button {
     width: 577px;
     margin: 0;
-    margin-bottom: 10px;
     padding: 18px 20px 18px 20px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
