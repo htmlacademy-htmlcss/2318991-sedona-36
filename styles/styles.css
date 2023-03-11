@@ -1255,7 +1255,7 @@ body {
     gap: 20px;
     list-style-type: none;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 
   .catalog-product-card {
