@@ -667,6 +667,7 @@ body {
     margin: 0;
     list-style-type: none;
     align-content:center;
+    width: 142px;
   }
 
   .footer-social-item {
