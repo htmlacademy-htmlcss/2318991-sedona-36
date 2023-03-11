@@ -821,10 +821,12 @@ body {
   }
 
   .breadcrumbs-link {
+    color: inherit;
+    font-size: 16px;
+    line-height: 21px;
     display: block;
     position: relative;
     padding-left: 21px;
-    color: #FFFFFF;
     text-decoration: none;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -911,12 +913,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .breadcrumbs-link {
-    color: inherit;
-    font-size: 16px;
-    line-height: 21px;
   }
 
   .catalog-filter-title {
