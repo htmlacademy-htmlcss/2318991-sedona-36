@@ -56,7 +56,7 @@ body {
   }
 
   .button {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
