@@ -703,11 +703,6 @@ body {
     opacity: 0.3;
   }
 
-  .footer-contacts{
-    min-width: 720px;
-    text-align: center;
-  }
-
   .footer-contacts-address-phone {
     display: inline-block;
     font-style: normal;
@@ -716,8 +711,9 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
-    min-width: 331px;
+    max-width: 720px;
     padding: 5px 0 5px;
+    text-align: center;
   }
 
   .footer-contacts-address-phone:hover,
