@@ -1036,6 +1036,14 @@ body {
     outline: 3px solid #83B3D3;
   }
 
+  .range-input::placeholder {
+    color: #000000;
+  }
+
+  .range-input:focus-visible:not(:placeholder-shown) {
+    outline: 2px solid #000000;
+  }
+
   .range-scale {
     height: 4px;
     position: relative;
@@ -1171,6 +1179,7 @@ body {
        -moz-appearance: none;
             appearance: none;
     outline: none;
+    cursor: pointer;
   }
 
   .select-contol:hover,
@@ -1622,7 +1631,7 @@ body {
     width: 440px;
     height: 48px;
     grid-column: 2 / 4;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
