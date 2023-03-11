@@ -1656,11 +1656,11 @@ body {
     fill: rgba(117, 97, 87, 0.3);
   }
 
-  .modal-input-date:focus-visible:not(:-moz-placeholder-shown) ~ .modal-date-iconn path {
+  .modal-input-date:focus-visible:not(:-moz-placeholder-shown) ~ .modal-date-icon path {
     fill: #000000;
   }
 
-  .modal-input-date:focus-visible:not(:placeholder-shown) ~ .modal-date-iconn path {
+  .modal-input-date:focus-visible:not(:placeholder-shown) ~ .modal-date-icon path {
     fill: #000000;
   }
 
