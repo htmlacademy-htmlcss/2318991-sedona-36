@@ -1523,7 +1523,8 @@ body {
   }
 
   .modal-container-close {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .modal {
@@ -1599,7 +1600,7 @@ body {
     display: grid;
     grid-template-columns: 137px 440px;
     position: relative;
-    margin: 0 0 22px;
+    margin: 0 0 23px;
     padding: 0;
   }
 
@@ -1928,7 +1929,6 @@ body {
   .modal-form-button {
     width: 577px;
     margin: 0;
-    margin-bottom: 10px;
     padding: 18px 20px 18px 20px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
