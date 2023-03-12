@@ -817,14 +817,11 @@ body {
     right: 0;
     bottom: 5px;
     left: 0;
-    background-image: url("../images/home.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 4px 0 5px;
-    width: 12px;
-    height: 12px;
+    padding: 4px 0 4px;
+    width: 13px;
+    height: 13px;
   }
 
   .breadcrumbs-link {
@@ -848,6 +845,14 @@ body {
   .breadcrumbs-link-home:active,
   .breadcrumbs-link:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  .breadcrumbs-link-home:hover path {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .breadcrumbs-link-home:active path{
+    fill: rgba(255, 255, 255, 0.3);
   }
 
   .breadcrumbs-link::before {
@@ -1059,6 +1064,8 @@ body {
     height: 4px;
     position: absolute;
     background-color: #FFFFFF;
+    left: 0;
+    width: 227px;
   }
 
   .range-toggle {
@@ -1763,14 +1770,17 @@ body {
 
    .modal-adult-counter:focus {
     outline: 3px solid #83B3D3;
+    outline-offset: -4px;
   }
 
   .modal-adult-counter:focus-visible:not(:-moz-placeholder-shown) {
     outline: 2px solid #000000;
+    outline-offset: -3px;
   }
 
   .modal-adult-counter:focus-visible:not(:placeholder-shown) {
     outline: 2px solid #000000;
+    outline-offset: -3px;
   }
 
   .modal-adult-counter::-webkit-outer-spin-button,
