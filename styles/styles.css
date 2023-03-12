@@ -301,15 +301,20 @@ body {
   .devider {
     position: absolute;
     content: "";
-    top: 485;
+    background-image: url("../images/divider.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
     z-index:1;
+    display: inline-block;
+    width: 1200px;
+    min-height: 57px;
   }
 
-  .advantages-desc-wrp {
+  .advantages-desc-wrapper {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
