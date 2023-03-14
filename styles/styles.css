@@ -476,7 +476,7 @@ body {
     width: 400px;
   }
 
-  .benefits-desc-wrp {
+  .benefits-desc-wrapper {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
